@@ -1,0 +1,29 @@
+{% block title %} Dashboard {% endblock title %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <style>
+        div{
+        position : absolute;
+        right : 10px;
+        top : 5px
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <body>
+
+
+        <div>
+        
+        <a href="logout/">Logout</a>
+            </div>
+        
+    
+{% csrf_token %}
+<h1>welcome {{e}}</h1>
