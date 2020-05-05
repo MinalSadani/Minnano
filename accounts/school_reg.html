@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>School</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #6A5ACD;
+  padding: 10px ;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 60%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: #FFFAFA;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 40%;
+  background-color: #FFFAFA;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#ip1 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 150px;
+  height: 30px;
+margin-left: 10px;
+}
+#ip2 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 150px;
+  height: 30px;
+margin-left: 10px;
+}
+#ip3{
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+#ip4 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+#ip5{
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+#ip6 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+#ip7 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+#ip8 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+#ip9 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+
+#ip10 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+
+#ip11 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+
+#ip12 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+
+#ip13 {
+  border-radius: 10px;
+  background: #FFFAFA;
+  padding: 10px;
+  width: 320px;
+  height: 30px;
+margin-left: 10px;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<input type="button" value="back" onclick="history.back(-1)"/>
+
+<header>
+  <h2>Let's Get Ready to scale up your School Audience...!</h2>
+</header>
+
+<section>
+  <nav>
+<div>
+    <h1 style="color:#6A5ACD"><i>Join More Than 100+ Schools Who Use KidsFuture to Develop the Whole Child and Reach more Students..! </i></h1></div>
+<div style="border: 2px white">
+
+<div style="border: 2px white"><p>&#9670; 25 mins to identify interests, strengths, aspirations and guidance for your existing students...</p></div>
+<div style="border: 2px white"><p>&#9670; 100+ extra curricular activites cum path to explore...</p></div>
+<div style="border: 2px white"><p>&#9670; Get Recommendation and personalized feedback about your school...</p></div>
+<div style="border: 2px white"><p>&#9670; List your school for free!</p></div>
+<div style="border: 2px white"><p>&#9670; Promote your school through our Advertising module for parents to find you
+ easily, and to make your listing stand out.</p></div>
+  </nav>
+ 
+  <article>
+<div style="background-color:#DCDCDC">
+    <form action="/postregister_school/" method="post">
+      {% csrf_token %}
+
+  <div class="container">
+    <center><h3>Sign Up as a <b>School</b></h3></center><center>
+   
+    <input type="text"id="ip6" placeholder="School Name" name="School Name" required><br><br>
+    <input type="text"id="ip7" placeholder="School Address" name="Address" required><br><br>
+    <input type="number"id="ip8" placeholder="Pin Code" name="pin" required><br><br>
+    <input type="number" id="ip4" placeholder="School Contact Number" name="contact" required><br><br>
+    <input type="email"id="ip5" placeholder="School Email" name="Email" required><br><br>
+    <input type="text" id="ip6"placeholder="Total Students Strength" name="strength" required><br><br>
+<form action="myform.cgi">
+   <center><label for="fileupload">School Id proof:</label>
+<input type="file" id="fileupload" placeholder="School Id proof" name="fileupload" accept=".doc,.docs,application/pdf,application/.jpeg,image/png,image/jpeg" required></center><br>
+</form>
+
+    <input type="text" id="ip8"placeholder="School Id proof" name="Id" required><br><br>
+    <input type="text"id="ip5" placeholder="Principal's Name" name=" Name" required><br><br>
+    <input type="text"id="ip9" placeholder="School Representative's Name" name=" Name" required><br><br>
+    <input type="number" id="ip10"placeholder="School Representative's Contact Number" name="contact" required><br><br>
+    <input type="email"id="ip11" placeholder="Email for Login" name="Email" required><br><br>
+    <input type="password" id="ip12"placeholder=" Password" name="psw" required><br><br>
+    <input type="password" id="ip13"placeholder="Confirm Password" name="psw" required><br><br>
+
+<center><button  type="submit" class="button">Get started today</button></center>
+      <p>By signing up, you are agreeing  to our<a href="#" style="color:dodgerblue">Privacy Policy</a>. and <a href="#" style="color:dodgerblue">Terms and Conditions</a>.</p>
+     
+</div>
+</form>
+</div>
+  </article>
+</section>
+<script type="text/javascript">
+  function Validate() {
+    var password = document.getElementById('ip12').value;
+    var confirmPassword = document.getElementById('ip13').value;
+    if (password != confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+    }
+    return true;
+   }
+</script>
+
+</body>=</html>
+
+
+<script>
+function validateemail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField) == false)
+        {
+            alert('Invalid email Address');
+            return false;
+        }
+
+        return true;
+
+}
+
+function validatePhone(phoneField){
+        var reg = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+
+        if (reg.test(phoneField) == false)
+        {
+            alert('Invalid Phone Number');
+            return false;
+        }
+
+        return true;
+
+}
+
+var password = document.getElementById('ip12')
+  , confirm_password = document.getElementById('ip13');
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+    alert("Passwords Don't Match");
+            return false;
+  } else {
+    confirm_password.setCustomValidity('');
+    return true;
+  }
+}
+
+
+</script>
