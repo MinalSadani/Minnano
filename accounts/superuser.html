@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}<title>KidsFuture</title>{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/superuser.css' %}">
+</head>
+<body>
+{% block content %}
+<a href="login/" style="position: absolute; text-align: right;">SingIn</a>
+
+<div class="header">
+  UNLOCK YOUR CHILD'S POTENTIAL<br>
+</div>
+
+  	<div class="columnsContainer">
+
+	  	<div class="leftColumn">
+	  		<p style="font-size:1.5em; font-family:Segoe UI"><b>Explore our<br>Services</b></p>
+			
+			<a href="parent/">Kids/Parents</a> <span> &#x279C;</span>
+			<br>
+			<a href="school/">School</a> <span>&#x279C;</span>
+			<br>
+			<a href="activist/">Activity Provider</a><span> &#x279C;</span>
+			<br>
+			<a href="mentor/">Mentors</a> <span>&#x279C;</span>
+			<br>
+			<a href="counselor/">Counselors</a> <span>&#x279C;</span>
+
+	  	</div>
+
+	  	<div class="rightColumn">
+		<center>
+	  		<p style="font-size:1.2em; font-family:Segoe UI">KidsFuture can help each child reach their full potential.
+				   </br>Develop your child's strengths and interest by understanding them better.
+	</br>
+	{% load static %}
+	<img src="{% static 'assets/img/superuser.jpg'%}" alt="KidsFuture" class="responsive" >
+	</center>
+
+	  	</div>
+
+  	</div>
+
+{% endblock content %}
+</body>
+</html>
